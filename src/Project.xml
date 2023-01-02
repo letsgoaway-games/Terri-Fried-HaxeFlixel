@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://lime.software/project/1.0.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://lime.software/project/1.0.2 http://lime.software/xsd/project-1.0.2.xsd">
+
+	<!-- _________________________ Application Settings _________________________ -->
+
+	<app title="Terri-Fried-HaxeFlixel" file="Terri-Fried-HaxeFlixel"
+		packageName="com.letsgoaway.terrifried.haxeflixel"
+		package="com.letsgoaway.terrifried.haxeflixel"
+		main="Init" version="2.0.0" company="letsgoaway games" />
+	<app preloader="flixel.system.FlxPreloader" />
+	<set name="SWF_VERSION" value="11.8" />
+	<icon path="assets/egg.png" />
+	<window width="800" height="450" fps="60" background="#000000" hardware="true" vsync="false" />
+	<window if="html5" resizable="true" />
+	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
+	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
+	<set name="BUILD_DIR" value="export" />
+	<source path="source" />
+	<assets path="assets" />
+	<haxelib name="flixel" />
+	<haxelib name="flixel-addons" />
+	<haxelib name="random" />
+	<haxedef name="FLX_NO_MOUSE" if="mobile" />
+	<haxedef name="FLX_NO_KEYBOARD" if="mobile" />
+	<haxedef name="FLX_NO_TOUCH" if="desktop" />
+	<haxedef name="FLX_NO_SOUND_TRAY" />
+	<haxedef name="FLX_NO_DEBUG" unless="debug" />
+	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
+	<template path="assets/data/templates" />
+</project>
